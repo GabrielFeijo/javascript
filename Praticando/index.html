@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Fuction</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            border: 0;
+            padding: 12px;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+        
+            font-size: 15px;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(0, 128, 0, 0.568);
+        }
+        
+    </style>
+</head>
+<body >
+    <button onclick="show_notify(notify)">Clique neste botão!</button>
+    <h3 id="notify"></h3>
+
+    <div>
+        <h1>Somar números</h1>
+        <p>Escolha o primeiro valor a ser somado</p>
+        <input type="number" name="num" id="num1" placeholder="Número 1">
+        <p>Escolha o segundo valor a ser somado</p>
+        <input type="number" name="num" id="num2" placeholder="Número 2">
+        <button onclick="somar(num1,num2,local)">Clique para somar estes números!</button>
+        <p id="local"></p>
+    </div>
+
+    <div>
+        <h2>Conhecendo Arrays</h2>
+        <p>Adicione elementos</p>
+        <input type="text" name="array" id="text1" placeholder="Elementos"> 
+        <button onclick="add(text1,vetor)">Clique para adicionar elementos!</button>
+        <button onclick="remove(text1,vetor)">Clique para remover o último elemento!</button>
+        <p id="vetor"></p>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
